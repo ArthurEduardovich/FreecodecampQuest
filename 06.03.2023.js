@@ -18,3 +18,69 @@ console.log(nextInLine([], 5));
 function welcomeToBooleans() {
   return true;
 }
+
+// Quest 59 (operator IF)
+const trueOrFalse = (wasThatTrue) => {
+  if (wasThatTrue === true) {
+    return 'Yes, that was true'
+  } else {
+    return 'No, that was false'
+  }
+}
+
+// Quest 60 (Comparison with the Equality Operator)
+function testEqual(val) {
+  if (val == 12) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testEqual(10);
+
+// Quest 61 (Comparison with the Strict Equality Operator)
+function testStrict(val) {
+  if (val === 7) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testStrict(10);
+
+// Quest 62 (Practice comparing different values)
+function compareEquality(a, b) {
+  if (a === b) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+compareEquality(10, "10");
+
+// Quest 63 (Comparison with the Inequality Operator)
+function testNotEqual(val) {
+  if (val != 99) { 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testNotEqual(10);
+
+// Quest 64 (Comparison with the Strict Inequality Operator)
+function testStrictNotEqual(val) {
+  if (val !== 17) { 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testStrictNotEqual(10);
+
+// Quest 65 (Comparison with the Greater Than Operator)
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+  return "10 or Under";
+}
+testGreaterThan(10);
