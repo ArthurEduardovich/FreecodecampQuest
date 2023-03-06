@@ -1,3 +1,5 @@
+// template - // Quest __ (__)
+
 // Quest 56 (Результат работы фукнции в переменную)
 let processed = processArg(7);
 function processArg(num) {
@@ -11,3 +13,8 @@ const nextInLine = (arr, item) => {
   return arr.shift();
 }
 console.log(nextInLine([], 5));
+
+// Quest 58 (Тип данных Boolean)
+function welcomeToBooleans() {
+  return true;
+}
