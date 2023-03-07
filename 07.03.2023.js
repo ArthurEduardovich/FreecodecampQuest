@@ -230,3 +230,78 @@ function isLess(a, b) {
   return a < b;
 };
 isLess(10, 15);
+
+// Quest 80
+function abTest(a, b) {
+  if (a < 0 || b < 0) return undefined;
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+abTest(2,2);
+
+// Quest 81
+let count = 0;
+
+const cc = (card) => {
+  if (card >= 2 && card <= 6) {
+    count += 1;
+  } if (card >= 7 && card <= 9) {
+    count += 0;
+  } if (card === 10 || card === 'J' || card === 'Q' || card === 'K' || card === 'A') {
+    count -= 1;
+  }
+
+  let betOrHold = '';
+
+  if (count <= 0) {
+    betOrHold = 'Hold'
+  } else {
+    betOrHold = 'Bet'
+  }
+  return `${count} ${betOrHold}`
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+// Quest 82
+const myDog = {
+  name: 'Dimka',
+  legs: 4,
+  tails: 2,
+  friends: ['Ivan','Artyr','Margo']
+};
+
+// Quest 83
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+const hatValue = testObj.hat;     
+const shirtValue = testObj.shirt;   
+
+// Quest 84
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+const entreeValue = testObj['an entree'];   
+const drinkValue = testObj['the drink'];    
+
+// Quest 85
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+const playerNumber = 16; 
+const player = testObj[playerNumber];
+
+// Quest 86
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+myDog.name = 'Happy Coder'
