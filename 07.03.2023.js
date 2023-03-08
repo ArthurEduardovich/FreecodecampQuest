@@ -305,3 +305,67 @@ const myDog = {
   "friends": ["freeCodeCamp Campers"]
 };
 myDog.name = 'Happy Coder'
+
+// Quest 87
+const fourOperation = (a, b) => {
+  const arr = new Array(a + b, a - b, a * b, a / b);
+  return arr
+}
+
+console.log(fourOperation(2, 2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
